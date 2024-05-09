@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <main class="container my-3">
+    <form id="form" action="./index.html" method="post">
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Juanito" required />
+        <label for="name">Name(s)</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Juanito" required />
+        <label for="last-name">Last name(s)</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="email" id="email" placeholder="Juanito" required />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" id="btn-save" name="btn-save" class="btn btn-success text-center">Save</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </div>
+    </form>
+
+
+    <table class="table table-hover table-bordered border-primary table-striped table-sm text-center">
+      <caption class="caption-top">List of coders</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider"></tbody>
+    </table>
+  </main>
+  <footer></footer>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
