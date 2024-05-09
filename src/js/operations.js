@@ -7,6 +7,11 @@ export function listWithInnerHtml(coders, tbody) {
             <td contenteditable="true">${coder.name}</td>
             <td>${coder.lastName}</td>
             <td>${coder.email}</td>
+            <td class="d-flex p-2">
+              <button type="button" data="${coder.id}" class="btn btn-warning">Detalles</button>
+              <button type="button" data="${coder.id}" class="btn btn-primary">Editar</button>
+              <button type="button" data="${coder.id}" class="btn btn-danger">Eliminar</button>
+            </td>
           </tr>
     `
     });
