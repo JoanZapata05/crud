@@ -7,7 +7,7 @@ export function listWithInnerHtml(coders, tbody) {
             <td contenteditable="true">${coder.name}</td>
             <td>${coder.lastName}</td>
             <td>${coder.email}</td>
-            <td class="d-flex p-2">
+            <td class="d-flex justify-conetent-center">
               <button type="button" data="${coder.id}" class="btn btn-warning">Detalles</button>
               <button type="button" data="${coder.id}" class="btn btn-primary">Editar</button>
               <button type="button" data="${coder.id}" class="btn btn-danger">Eliminar</button>
@@ -43,6 +43,14 @@ export function listWithInnerHtml(coders, tbody) {
             }
             coders.push(tempCoder)
     
+}
+
+export function deleteItem(coders,idParaEliminar){
+  coders.forEach((coder,index) => {
+    if(coder.id == idParaEliminar){
+        coders.splice(index,1)
+    }
+});
 }
 
 
